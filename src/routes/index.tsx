@@ -1,5 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-border.jpg";
+import mebrHero from "@/assets/mebr-hero.jpeg.asset.json";
+
+const DISCORD_URL = "https://discord.gg/mebr";
+
+const staff = [
+  { name: "Manos", role: "Head of Moderation", desc: "Fully trained command lead overseeing the entire moderation operation.", initials: "MA" },
+  { name: "Aventus", role: "Senior Moderator · Trainer", desc: "Teaches new recruits the ropes and shapes the next generation of staff.", initials: "AV" },
+  { name: "Boti", role: "Senior Moderator · Oversight", desc: "Oversees all active moderators and keeps standards sharp across the team.", initials: "BO" },
+  { name: "Truff", role: "Senior Moderator · Trainee Lead", desc: "Watches over moderators-in-training and guides them through their probation.", initials: "TR" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
