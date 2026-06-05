@@ -119,28 +119,37 @@ function Index() {
 
       {/* Staff */}
       <section id="staff" className="py-24 px-5 bg-card/40 border-y border-border">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 max-w-2xl">
             <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">The Backbone</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-6">A staff team you can actually count on.</h2>
-            <p className="text-muted-foreground mb-6 text-lg">
-              Our staff is trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend. No drama — just well-managed roleplay.
+            <h2 className="font-display text-5xl md:text-6xl mb-4">Meet the high command.</h2>
+            <p className="text-muted-foreground text-lg">
+              Trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend.
             </p>
-            <div className="flex flex-wrap gap-2">
-              {["24/7 Coverage", "Trained Moderators", "Weekly Events", "Fair Appeals", "Anti-Cheat"].map(t => (
-                <span key={t} className="px-3 py-1.5 text-xs rounded-full bg-secondary border border-border uppercase tracking-wider">{t}</span>
-              ))}
-            </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            {staff.map((s) => (
+              <div key={s.name} className="group relative p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition">
+                <div className="w-16 h-16 rounded-full mb-5 flex items-center justify-center font-display text-2xl text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
+                  {s.initials}
+                </div>
+                <h3 className="font-display text-2xl mb-1">{s.name}</h3>
+                <p className="text-xs uppercase tracking-widest text-ember mb-3">{s.role}</p>
+                <p className="text-sm text-muted-foreground">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { n: "30+", l: "Staff Members" },
+              { n: "24/7", l: "Coverage" },
               { n: "<5m", l: "Avg Response" },
               { n: "100%", l: "Active Daily" },
               { n: "0", l: "Tolerance for Abuse" },
             ].map(s => (
               <div key={s.l} className="p-6 rounded-lg bg-background border border-border">
-                <div className="font-display text-5xl text-ember mb-1">{s.n}</div>
+                <div className="font-display text-4xl md:text-5xl text-ember mb-1">{s.n}</div>
                 <div className="text-xs uppercase tracking-widest text-muted-foreground">{s.l}</div>
               </div>
             ))}
