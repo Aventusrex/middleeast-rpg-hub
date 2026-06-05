@@ -52,6 +52,7 @@ function Index() {
           </div>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
             <a href="#countries" className="hover:text-foreground transition">Countries</a>
+            <a href="#tutorial" className="hover:text-foreground transition">How to Join</a>
             <a href="#government" className="hover:text-foreground transition">Government</a>
             <a href="#staff" className="hover:text-foreground transition">Staff</a>
           </nav>
