@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-border.jpg";
 import mebrHero from "@/assets/mebr-hero.jpeg.asset.json";
+import mebrSquad from "@/assets/mebr-squad.jpeg.asset.json";
+import mebrLogo from "@/assets/mebr-logo.jpeg.asset.json";
 
 const DISCORD_URL = "https://discord.gg/mebr";
 
@@ -45,8 +46,8 @@ function Index() {
       {/* Nav */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-ember animate-pulse" />
+          <div className="flex items-center gap-3">
+            <img src={mebrLogo.url} alt="MEBR logo" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
             <span className="font-display text-lg tracking-wider">MEBR</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
@@ -89,6 +90,20 @@ function Index() {
             <a href="#countries" className="px-7 py-4 rounded-md border border-border bg-background/30 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-background/60 transition">
               View Nations
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Showcase photo */}
+      <section className="px-5 pt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="relative rounded-2xl overflow-hidden border border-border">
+            <img src={mebrSquad.url} alt="MEBR squad on patrol" width={1600} height={900} className="w-full h-auto object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-2">Real Operations · In-Game</p>
+              <h3 className="font-display text-3xl md:text-5xl">Boots on the ground. Every single day.</h3>
+            </div>
           </div>
         </div>
       </section>
