@@ -54,7 +54,7 @@ function Index() {
             <a href="#staff" className="hover:text-foreground transition">Staff</a>
             <a href="#join" className="hover:text-foreground transition">Join</a>
           </nav>
-          <a href="#join" className="text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-md text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
+          <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-md text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
             Enlist
           </a>
         </div>
