@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import mebrHero from "@/assets/mebr-hero.jpeg.asset.json";
 import mebrSquad from "@/assets/mebr-squad.jpeg.asset.json";
 import mebrLogo from "@/assets/mebr-logo.jpeg.asset.json";
+import mebrPatrol from "@/assets/mebr-patrol.jpeg.asset.json";
+import mebrSyria from "@/assets/mebr-syria.jpeg.asset.json";
+import mebrCity from "@/assets/mebr-city.webp.asset.json";
 
 const DISCORD_URL = "https://discord.gg/mebr";
 
