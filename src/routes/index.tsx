@@ -157,6 +157,48 @@ function Index() {
         </div>
       </section>
 
+      {/* Government & Elections */}
+      <section id="government" className="py-24 px-5">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 max-w-2xl">
+            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">Politics & Power</p>
+            <h2 className="font-display text-5xl md:text-6xl mb-4">Run for office.<br/>Lead your nation.</h2>
+            <p className="text-muted-foreground text-lg">
+              Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { t: "Join the Government", d: "Apply for cabinet roles, ministries and senior gov positions inside any of the eight nations." },
+              { t: "Run for President", d: "Campaign, build your platform, and rally voters during official election cycles." },
+              { t: "Fair Elections", d: "Every vote is verified and supervised by staff. No rigging, no favoritism — the people decide." },
+            ].map(x => (
+              <div key={x.t} className="p-6 rounded-lg bg-card border border-border hover:border-ember/60 transition">
+                <h3 className="font-display text-2xl mb-2">{x.t}</h3>
+                <p className="text-sm text-muted-foreground">{x.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Safety */}
+      <section className="py-20 px-5 border-y border-border bg-card/40">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+          <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl shrink-0" style={{ background: "var(--gradient-ember)" }}>
+            🛡️
+          </div>
+          <div>
+            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-2">Safe & Monitored 24/7</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-3">A server you can actually trust.</h2>
+            <p className="text-muted-foreground">
+              Our staff monitors the server around the clock. Anti-cheat, active moderation, and zero tolerance for harassment keep MEBR a safe place to roleplay — day or night.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
       {/* CTA */}
       <section id="join" className="py-32 px-5 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
