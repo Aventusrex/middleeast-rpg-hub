@@ -33,14 +33,14 @@ export const Route = createFileRoute("/")({
 });
 
 const countries = [
-  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security." },
-  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control." },
-  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities." },
-  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations." },
-  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild." },
-  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response." },
-  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors." },
-  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay." },
+  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security.", img: mebrPatrol.url },
+  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control.", img: mebrHero.url },
+  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities.", img: mebrCity.url },
+  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations.", img: mebrSquad.url },
+  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild.", img: mebrSyria.url },
+  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response.", img: mebrCity.url },
+  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors.", img: mebrPatrol.url },
+  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay.", img: mebrSquad.url },
 ];
 
 function Index() {
