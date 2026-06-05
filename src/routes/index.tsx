@@ -63,12 +63,13 @@ function Index() {
       {/* Hero */}
       <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
         <img
-          src={heroImg}
-          alt="Desert border at dusk"
+          src={mebrHero.url}
+          alt="MEBR operator with Egyptian flag patch"
           width={1920}
           height={1080}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-background/40" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
           <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-4">Roleplay Server · Est. 2024</p>
