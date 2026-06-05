@@ -78,7 +78,7 @@ function Index() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
           <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Server · Est. 2024</p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-6 max-w-5xl italic">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-8xl mb-6 max-w-5xl italic">
             Middle Eastern<br />
             <span className="not-italic text-foreground">Border Roleplay</span>
           </h1>
@@ -115,7 +115,7 @@ function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
             <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Choose Your Allegiance</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Eight nations<br/>open for enlistment</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Eight nations<br/>open for enlistment</h2>
             <p className="text-muted-foreground">Each nation runs its own command structure, ranks, missions and storylines. Switch allegiances or rise through the ranks of one.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -143,7 +143,7 @@ function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
             <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">How to Join</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">From civilian<br/>to soldier in 4 steps.</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">From civilian<br/>to soldier in 4 steps.</h2>
             <p className="text-muted-foreground text-lg">Follow this path and you'll be on the frontline in minutes.</p>
           </div>
 
@@ -174,7 +174,7 @@ function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
             <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">The Backbone</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Meet the high command.</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Meet the high command.</h2>
             <p className="text-muted-foreground text-lg">
               Trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend.
             </p>
@@ -214,7 +214,7 @@ function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
             <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Politics & Power</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Run for office.<br/>Lead your nation.</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Run for office.<br/>Lead your nation.</h2>
             <p className="text-muted-foreground text-lg">
               Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
             </p>
@@ -255,7 +255,7 @@ function Index() {
       <section id="join" className="py-32 px-5 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
         <div className="relative max-w-3xl mx-auto">
-          <h2 className="font-display text-5xl md:text-7xl mb-6">The border won't<br/>hold itself.</h2>
+          <h2 className="font-display text-4xl md:text-5xl mb-6">The border won't<br/>hold itself.</h2>
           <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
             discord.gg/mebr
