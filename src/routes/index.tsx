@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import mebrHero from "@/assets/mebr-hero.jpeg.asset.json";
 import mebrSquad from "@/assets/mebr-squad.jpeg.asset.json";
 import mebrLogo from "@/assets/mebr-logo.jpeg.asset.json";
+import mebrPatrol from "@/assets/mebr-patrol.jpeg.asset.json";
+import mebrSyria from "@/assets/mebr-syria.jpeg.asset.json";
+import mebrCity from "@/assets/mebr-city.webp.asset.json";
 
 const DISCORD_URL = "https://discord.gg/mebr";
 
@@ -23,21 +26,21 @@ export const Route = createFileRoute("/")({
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" },
     ],
   }),
   component: Index,
 });
 
 const countries = [
-  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security." },
-  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control." },
-  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities." },
-  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations." },
-  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild." },
-  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response." },
-  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors." },
-  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay." },
+  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security.", img: mebrPatrol.url },
+  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control.", img: mebrHero.url },
+  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities.", img: mebrCity.url },
+  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations.", img: mebrSquad.url },
+  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild.", img: mebrSyria.url },
+  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response.", img: mebrCity.url },
+  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors.", img: mebrPatrol.url },
+  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay.", img: mebrSquad.url },
 ];
 
 function Index() {
@@ -74,21 +77,19 @@ function Index() {
         <div className="absolute inset-0 bg-background/40" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
-          <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-4">Roleplay Server · Est. 2024</p>
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-6 max-w-5xl">
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Server · Est. 2024</p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-8xl mb-6 max-w-5xl italic">
             Middle Eastern<br />
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-ember)" }}>
-              Border Roleplay
-            </span>
+            <span className="not-italic text-foreground">Border Roleplay</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
             Eight nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-4 rounded-md text-primary-foreground font-bold uppercase tracking-wider text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+            <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-4 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
               Join the Discord
             </a>
-            <a href="#countries" className="px-7 py-4 rounded-md border border-border bg-background/30 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-background/60 transition">
+            <a href="#countries" className="px-7 py-4 rounded-md border border-border bg-background/30 backdrop-blur text-foreground font-medium uppercase tracking-[0.2em] text-sm hover:bg-background/60 transition">
               View Nations
             </a>
           </div>
@@ -102,7 +103,7 @@ function Index() {
             <img src={mebrSquad.url} alt="MEBR squad on patrol" width={1600} height={900} className="w-full h-auto object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-              <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-2">Real Operations · In-Game</p>
+              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">Real Operations · In-Game</p>
               <h3 className="font-display text-3xl md:text-5xl">Boots on the ground. Every single day.</h3>
             </div>
           </div>
@@ -113,18 +114,22 @@ function Index() {
       <section id="countries" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">Choose Your Allegiance</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Eight nations<br/>open for enlistment</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Choose Your Allegiance</p>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Eight nations<br/>open for enlistment</h2>
             <p className="text-muted-foreground">Each nation runs its own command structure, ranks, missions and storylines. Switch allegiances or rise through the ranks of one.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {countries.map((c) => (
-              <div key={c.name} className="group relative p-6 rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
-                <div className="absolute -top-10 -right-10 text-9xl opacity-10 group-hover:opacity-20 transition">{c.flag}</div>
-                <div className="relative">
-                  <div className="text-4xl mb-4">{c.flag}</div>
-                  <h3 className="font-display text-2xl mb-1">{c.name}</h3>
-                  <p className="text-xs uppercase tracking-widest text-ember mb-3">{c.tag}</p>
+              <div key={c.name} className="group relative rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <img src={c.img} alt={`${c.name} in-game scene`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xl">{c.flag}</span>
+                    <h3 className="font-display text-2xl">{c.name}</h3>
+                  </div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-ember mb-2">{c.tag}</p>
                   <p className="text-sm text-muted-foreground">{c.desc}</p>
                 </div>
               </div>
@@ -137,8 +142,8 @@ function Index() {
       <section id="tutorial" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">How to Join</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">From civilian<br/>to soldier in 4 steps.</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">How to Join</p>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">From civilian<br/>to soldier in 4 steps.</h2>
             <p className="text-muted-foreground text-lg">Follow this path and you'll be on the frontline in minutes.</p>
           </div>
 
@@ -168,8 +173,8 @@ function Index() {
       <section id="staff" className="py-24 px-5 bg-card/40 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">The Backbone</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Meet the high command.</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">The Backbone</p>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Meet the high command.</h2>
             <p className="text-muted-foreground text-lg">
               Trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend.
             </p>
@@ -208,8 +213,8 @@ function Index() {
       <section id="government" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">Politics & Power</p>
-            <h2 className="font-display text-5xl md:text-6xl mb-4">Run for office.<br/>Lead your nation.</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Politics & Power</p>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">Run for office.<br/>Lead your nation.</h2>
             <p className="text-muted-foreground text-lg">
               Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
             </p>
@@ -236,7 +241,7 @@ function Index() {
             🛡️
           </div>
           <div>
-            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-2">Safe & Monitored 24/7</p>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">Safe & Monitored 24/7</p>
             <h2 className="font-display text-3xl md:text-4xl mb-3">A server you can actually trust.</h2>
             <p className="text-muted-foreground">
               Our staff monitors the server around the clock. Anti-cheat, active moderation, and zero tolerance for harassment keep MEBR a safe place to roleplay — day or night.
@@ -250,9 +255,9 @@ function Index() {
       <section id="join" className="py-32 px-5 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
         <div className="relative max-w-3xl mx-auto">
-          <h2 className="font-display text-5xl md:text-7xl mb-6">The border won't<br/>hold itself.</h2>
+          <h2 className="font-display text-4xl md:text-5xl mb-6">The border won't<br/>hold itself.</h2>
           <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
-          <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-bold uppercase tracking-wider shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+          <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
             discord.gg/mebr
           </a>
         </div>
