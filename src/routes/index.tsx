@@ -83,8 +83,8 @@ function Index() {
             Eight nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="#join" className="px-7 py-4 rounded-md text-primary-foreground font-bold uppercase tracking-wider text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-              Join the Server
+            <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-4 rounded-md text-primary-foreground font-bold uppercase tracking-wider text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+              Join the Discord
             </a>
             <a href="#countries" className="px-7 py-4 rounded-md border border-border bg-background/30 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-background/60 transition">
               View Nations
