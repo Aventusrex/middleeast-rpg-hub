@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-border.jpg";
 import mebrHero from "@/assets/mebr-hero.jpeg.asset.json";
+import mebrSquad from "@/assets/mebr-squad.jpeg.asset.json";
+import mebrLogo from "@/assets/mebr-logo.jpeg.asset.json";
 
 const DISCORD_URL = "https://discord.gg/mebr";
 
