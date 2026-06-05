@@ -163,8 +163,8 @@ function Index() {
         <div className="relative max-w-3xl mx-auto">
           <h2 className="font-display text-5xl md:text-7xl mb-6">The border won't<br/>hold itself.</h2>
           <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
-          <a href="#" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-bold uppercase tracking-wider shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-            Join the Discord
+          <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-bold uppercase tracking-wider shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+            discord.gg/mebr
           </a>
         </div>
       </section>
