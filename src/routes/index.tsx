@@ -78,11 +78,9 @@ function Index() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
           <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Server · Est. 2024</p>
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-6 max-w-5xl">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-6 max-w-5xl italic">
             Middle Eastern<br />
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-ember)" }}>
-              Border Roleplay
-            </span>
+            <span className="not-italic text-foreground">Border Roleplay</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
             Eight nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
