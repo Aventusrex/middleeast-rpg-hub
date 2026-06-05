@@ -94,6 +94,20 @@ function Index() {
         </div>
       </section>
 
+      {/* Showcase photo */}
+      <section className="px-5 pt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="relative rounded-2xl overflow-hidden border border-border">
+            <img src={mebrSquad.url} alt="MEBR squad on patrol" width={1600} height={900} className="w-full h-auto object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-2">Real Operations · In-Game</p>
+              <h3 className="font-display text-3xl md:text-5xl">Boots on the ground. Every single day.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Countries */}
       <section id="countries" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
