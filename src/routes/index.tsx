@@ -46,8 +46,8 @@ function Index() {
       {/* Nav */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-ember animate-pulse" />
+          <div className="flex items-center gap-3">
+            <img src={mebrLogo.url} alt="MEBR logo" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
             <span className="font-display text-lg tracking-wider">MEBR</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
