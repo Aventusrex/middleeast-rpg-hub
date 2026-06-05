@@ -122,12 +122,16 @@ function Index() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {countries.map((c) => (
-              <div key={c.name} className="group relative p-6 rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
-                <div className="absolute -top-10 -right-10 text-9xl opacity-10 group-hover:opacity-20 transition">{c.flag}</div>
-                <div className="relative">
-                  <div className="text-4xl mb-4">{c.flag}</div>
-                  <h3 className="font-display text-2xl mb-1">{c.name}</h3>
-                  <p className="text-xs uppercase tracking-widest text-ember mb-3">{c.tag}</p>
+              <div key={c.name} className="group relative rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <img src={c.img} alt={`${c.name} in-game scene`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xl">{c.flag}</span>
+                    <h3 className="font-display text-2xl">{c.name}</h3>
+                  </div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-ember mb-2">{c.tag}</p>
                   <p className="text-sm text-muted-foreground">{c.desc}</p>
                 </div>
               </div>
