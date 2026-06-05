@@ -1,29 +1,157 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-border.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Middle Eastern Border Roleplay — Join the Frontlines" },
+      { name: "description", content: "Immersive Middle Eastern Border Roleplay. Enlist with Kuwait, Egypt, Lebanon, Iraq, Syria, Israel, Jordan, or Palestine. Backed by a dedicated staff team." },
+      { property: "og:title", content: "Middle Eastern Border Roleplay" },
+      { property: "og:description", content: "Pick your nation. Hold the border. Live the roleplay." },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+const countries = [
+  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security." },
+  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control." },
+  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities." },
+  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations." },
+  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild." },
+  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response." },
+  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors." },
+  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay." },
+];
+
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Nav */}
+      <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
+        <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-ember animate-pulse" />
+            <span className="font-display text-lg tracking-wider">MEBR</span>
+          </div>
+          <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
+            <a href="#countries" className="hover:text-foreground transition">Countries</a>
+            <a href="#staff" className="hover:text-foreground transition">Staff</a>
+            <a href="#join" className="hover:text-foreground transition">Join</a>
+          </nav>
+          <a href="#join" className="text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-md text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
+            Enlist
+          </a>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
+        <img
+          src={heroImg}
+          alt="Desert border at dusk"
+          width={1920}
+          height={1080}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+        <div className="relative max-w-6xl mx-auto px-5 w-full">
+          <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-4">Roleplay Server · Est. 2024</p>
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-6 max-w-5xl">
+            Middle Eastern<br />
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-ember)" }}>
+              Border Roleplay
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
+            Eight nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <a href="#join" className="px-7 py-4 rounded-md text-primary-foreground font-bold uppercase tracking-wider text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+              Join the Server
+            </a>
+            <a href="#countries" className="px-7 py-4 rounded-md border border-border bg-background/30 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-background/60 transition">
+              View Nations
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Countries */}
+      <section id="countries" className="py-24 px-5">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 max-w-2xl">
+            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">Choose Your Allegiance</p>
+            <h2 className="font-display text-5xl md:text-6xl mb-4">Eight nations<br/>open for enlistment</h2>
+            <p className="text-muted-foreground">Each nation runs its own command structure, ranks, missions and storylines. Switch allegiances or rise through the ranks of one.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {countries.map((c) => (
+              <div key={c.name} className="group relative p-6 rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
+                <div className="absolute -top-10 -right-10 text-9xl opacity-10 group-hover:opacity-20 transition">{c.flag}</div>
+                <div className="relative">
+                  <div className="text-4xl mb-4">{c.flag}</div>
+                  <h3 className="font-display text-2xl mb-1">{c.name}</h3>
+                  <p className="text-xs uppercase tracking-widest text-ember mb-3">{c.tag}</p>
+                  <p className="text-sm text-muted-foreground">{c.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Staff */}
+      <section id="staff" className="py-24 px-5 bg-card/40 border-y border-border">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-ember font-semibold uppercase tracking-[0.3em] text-xs mb-3">The Backbone</p>
+            <h2 className="font-display text-5xl md:text-6xl mb-6">A staff team you can actually count on.</h2>
+            <p className="text-muted-foreground mb-6 text-lg">
+              Our staff is trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend. No drama — just well-managed roleplay.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {["24/7 Coverage", "Trained Moderators", "Weekly Events", "Fair Appeals", "Anti-Cheat"].map(t => (
+                <span key={t} className="px-3 py-1.5 text-xs rounded-full bg-secondary border border-border uppercase tracking-wider">{t}</span>
+              ))}
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { n: "30+", l: "Staff Members" },
+              { n: "<5m", l: "Avg Response" },
+              { n: "100%", l: "Active Daily" },
+              { n: "0", l: "Tolerance for Abuse" },
+            ].map(s => (
+              <div key={s.l} className="p-6 rounded-lg bg-background border border-border">
+                <div className="font-display text-5xl text-ember mb-1">{s.n}</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="join" className="py-32 px-5 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
+        <div className="relative max-w-3xl mx-auto">
+          <h2 className="font-display text-5xl md:text-7xl mb-6">The border won't<br/>hold itself.</h2>
+          <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
+          <a href="#" className="inline-block px-10 py-5 rounded-md text-primary-foreground font-bold uppercase tracking-wider shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+            Join the Discord
+          </a>
+        </div>
+      </section>
+
+      <footer className="border-t border-border py-8 px-5 text-center text-xs text-muted-foreground uppercase tracking-widest">
+        © {new Date().getFullYear()} Middle Eastern Border Roleplay
+      </footer>
     </div>
   );
 }
