@@ -64,6 +64,7 @@ function Index() {
             <a href="#countries" className="hover:text-foreground transition">Countries</a>
             <a href="#tutorial" className="hover:text-foreground transition">How to Join</a>
             <a href="#government" className="hover:text-foreground transition">Government</a>
+            <a href="#ranks" className="hover:text-foreground transition">Ranks</a>
             <a href="#staff" className="hover:text-foreground transition">Staff</a>
           </nav>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-md text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
@@ -243,6 +244,68 @@ function Index() {
           </div>
         </div>
       </section>
+      {/* Ranks & Progression */}
+      <section id="ranks" className="py-24 px-5 bg-card/40 border-y border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 max-w-2xl">
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Ranks & Progression</p>
+            <h2 className="font-display text-4xl md:text-5xl mb-4">From recruit<br/>to commander-in-chief.</h2>
+            <p className="text-muted-foreground text-lg">
+              Every soldier starts at the bottom. Prove yourself on patrols, events and operations to climb your nation's military ladder — and unlock the right to run for President.
+            </p>
+          </div>
+
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+            {[
+              { n: "01", t: "Recruit", d: "Pass enlistment and complete your first training." },
+              { n: "02", t: "Soldier", d: "Active on patrols, events and squad operations." },
+              { n: "03", t: "NCO", d: "Lead squads, run drills, mentor new recruits." },
+              { n: "04", t: "Officer", d: "Command platoons and plan nation-wide ops." },
+              { n: "05", t: "High Command", d: "General staff — eligible to run for President." },
+            ].map((r) => (
+              <li key={r.n} className="p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition">
+                <div className="font-display text-4xl text-ember mb-3">{r.n}</div>
+                <h3 className="font-display text-xl mb-2">{r.t}</h3>
+                <p className="text-sm text-muted-foreground">{r.d}</p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="p-6 md:p-8 rounded-lg border border-ember/40 bg-background flex flex-col md:flex-row items-start md:items-center gap-4">
+            <div className="font-display text-4xl">🎖️</div>
+            <div>
+              <h3 className="font-display text-2xl mb-1">Eligible for President</h3>
+              <p className="text-sm text-muted-foreground">
+                Reach High Command in your nation's army and you unlock the right to campaign in the official Presidential elections. Earn your rank, then earn your country's vote.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth on Roblox */}
+      <section className="py-20 px-5">
+        <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-2xl border border-border bg-card/60 text-center">
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Growing Every Week · Roblox</p>
+          <h2 className="font-display text-3xl md:text-5xl mb-4">Activity is climbing.<br/>Get in early.</h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+            MEBR is slowly but steadily rising in activity on Roblox — more players, more events, more action every week. Now's the time to claim your nation, lock in a rank, and grow with the community.
+          </p>
+          <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+            {[
+              { n: "📈", l: "Weekly Growth" },
+              { n: "🎮", l: "Live on Roblox" },
+              { n: "🌍", l: "8 Nations Active" },
+            ].map(s => (
+              <div key={s.l} className="p-5 rounded-lg bg-background border border-border">
+                <div className="text-3xl mb-2">{s.n}</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Safety */}
       <section className="py-20 px-5 border-y border-border bg-card/40">
