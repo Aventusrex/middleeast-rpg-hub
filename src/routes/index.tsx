@@ -56,11 +56,13 @@ function Index() {
       {/* Nav */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src={mebrLogo.url} alt="MEBR logo" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
-            <span className="font-display text-lg tracking-wider">MEBR</span>
-          </div>
-          <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
+          <a href="#top" className="flex items-center gap-3">
+            <img src={mebrLogo.url} alt="House of Panchion" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
+            <span className="font-display text-lg tracking-wider">House of Panchion</span>
+          </a>
+          <nav className="hidden md:flex gap-6 text-sm text-muted-foreground">
+            <a href="#mebr" className="hover:text-foreground transition">MEBR</a>
+            <a href="#bbrp" className="hover:text-foreground transition">BBRP</a>
             <a href="#countries" className="hover:text-foreground transition">Countries</a>
             <a href="#tutorial" className="hover:text-foreground transition">How to Join</a>
             <a href="#government" className="hover:text-foreground transition">Government</a>
@@ -72,6 +74,7 @@ function Index() {
           </a>
         </div>
       </header>
+
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
