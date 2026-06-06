@@ -121,26 +121,17 @@ function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {countries.map((c) => (
               <div key={c.name} className="group relative rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition shadow-sm hover:shadow-md">
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                  <img src={c.img} alt={`${c.name} in-game scene`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <div className="relative aspect-[4/3] overflow-hidden bg-muted flex items-center justify-center p-4">
                   <img
-                    src={`https://flagcdn.com/w160/${c.iso}.png`}
-                    srcSet={`https://flagcdn.com/w320/${c.iso}.png 2x`}
+                    src={`https://flagcdn.com/w640/${c.iso}.png`}
+                    srcSet={`https://flagcdn.com/w1280/${c.iso}.png 2x`}
                     alt={`${c.name} flag`}
                     loading="lazy"
-                    className="absolute top-3 left-3 w-12 h-8 object-cover rounded-sm shadow-md ring-1 ring-black/20"
+                    className="max-w-full max-h-full object-contain shadow-md ring-1 ring-border group-hover:scale-105 transition duration-500"
                   />
                 </div>
                 <div className="p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <img
-                      src={`https://flagcdn.com/w80/${c.iso}.png`}
-                      alt=""
-                      aria-hidden="true"
-                      className="w-6 h-4 object-cover rounded-[2px] ring-1 ring-border"
-                    />
-                    <h3 className="font-display text-2xl">{c.name}</h3>
-                  </div>
+                  <h3 className="font-display text-2xl mb-2">{c.name}</h3>
                   <p className="text-xs uppercase tracking-[0.2em] text-ember mb-2">{c.tag}</p>
                   <p className="text-sm text-muted-foreground">{c.desc}</p>
                 </div>
