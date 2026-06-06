@@ -33,14 +33,14 @@ export const Route = createFileRoute("/")({
 });
 
 const countries = [
-  { name: "Kuwait", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security.", img: mebrPatrol.url },
-  { name: "Egypt", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control.", img: mebrHero.url },
-  { name: "Lebanon", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities.", img: mebrCity.url },
-  { name: "Iraq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations.", img: mebrSquad.url },
-  { name: "Syria", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild.", img: mebrSyria.url },
-  { name: "Israel", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response.", img: mebrCity.url },
-  { name: "Jordan", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors.", img: mebrPatrol.url },
-  { name: "Palestine", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay.", img: mebrSquad.url },
+  { name: "Kuwait", iso: "kw", flag: "🇰🇼", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security.", img: mebrPatrol.url },
+  { name: "Egypt", iso: "eg", flag: "🇪🇬", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control.", img: mebrHero.url },
+  { name: "Lebanon", iso: "lb", flag: "🇱🇧", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities.", img: mebrCity.url },
+  { name: "Iraq", iso: "iq", flag: "🇮🇶", tag: "Twin Rivers", desc: "Desert frontiers and urban operations.", img: mebrSquad.url },
+  { name: "Syria", iso: "sy", flag: "🇸🇾", tag: "Northern Stand", desc: "Multi-front border defense and rebuild.", img: mebrSyria.url },
+  { name: "Israel", iso: "il", flag: "🇮🇱", tag: "Iron Watch", desc: "High-tech defense and rapid response.", img: mebrCity.url },
+  { name: "Jordan", iso: "jo", flag: "🇯🇴", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors.", img: mebrPatrol.url },
+  { name: "Palestine", iso: "ps", flag: "🇵🇸", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay.", img: mebrSquad.url },
 ];
 
 function Index() {
@@ -120,13 +120,25 @@ function Index() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {countries.map((c) => (
-              <div key={c.name} className="group relative rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition">
-                <div className="aspect-[4/3] overflow-hidden bg-muted">
+              <div key={c.name} className="group relative rounded-lg bg-card border border-border overflow-hidden hover:border-ember/60 transition shadow-sm hover:shadow-md">
+                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                   <img src={c.img} alt={`${c.name} in-game scene`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                  <img
+                    src={`https://flagcdn.com/w160/${c.iso}.png`}
+                    srcSet={`https://flagcdn.com/w320/${c.iso}.png 2x`}
+                    alt={`${c.name} flag`}
+                    loading="lazy"
+                    className="absolute top-3 left-3 w-12 h-8 object-cover rounded-sm shadow-md ring-1 ring-black/20"
+                  />
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xl">{c.flag}</span>
+                    <img
+                      src={`https://flagcdn.com/w80/${c.iso}.png`}
+                      alt=""
+                      aria-hidden="true"
+                      className="w-6 h-4 object-cover rounded-[2px] ring-1 ring-border"
+                    />
                     <h3 className="font-display text-2xl">{c.name}</h3>
                   </div>
                   <p className="text-xs uppercase tracking-[0.2em] text-ember mb-2">{c.tag}</p>
