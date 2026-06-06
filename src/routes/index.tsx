@@ -18,10 +18,10 @@ const staff = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Middle Eastern Border Roleplay — Join the Frontlines" },
-      { name: "description", content: "Immersive Middle Eastern Border Roleplay. Enlist with Kuwait, Egypt, Lebanon, Iraq, Syria, Israel, Jordan, or Palestine. Backed by a dedicated staff team." },
-      { property: "og:title", content: "Middle Eastern Border Roleplay" },
-      { property: "og:description", content: "Pick your nation. Hold the border. Live the roleplay." },
+      { title: "House of Panchion — Home of MEBR & BBRP" },
+      { name: "description", content: "House of Panchion is the studio behind Middle Eastern Border Roleplay (MEBR) and the upcoming Balkan Border Roleplay (BBRP), releasing on the 12th." },
+      { property: "og:title", content: "House of Panchion" },
+      { property: "og:description", content: "The studio behind MEBR and BBRP." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
