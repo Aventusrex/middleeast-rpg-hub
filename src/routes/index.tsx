@@ -18,10 +18,10 @@ const staff = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Middle Eastern Border Roleplay — Join the Frontlines" },
-      { name: "description", content: "Immersive Middle Eastern Border Roleplay. Enlist with Kuwait, Egypt, Lebanon, Iraq, Syria, Israel, Jordan, or Palestine. Backed by a dedicated staff team." },
-      { property: "og:title", content: "Middle Eastern Border Roleplay" },
-      { property: "og:description", content: "Pick your nation. Hold the border. Live the roleplay." },
+      { title: "House of Panchion — Home of MEBR & BBRP" },
+      { name: "description", content: "House of Panchion is the studio behind Middle Eastern Border Roleplay (MEBR) and the upcoming Balkan Border Roleplay (BBRP), releasing on the 12th." },
+      { property: "og:title", content: "House of Panchion" },
+      { property: "og:description", content: "The studio behind MEBR and BBRP." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -56,11 +56,13 @@ function Index() {
       {/* Nav */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
         <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src={mebrLogo.url} alt="MEBR logo" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
-            <span className="font-display text-lg tracking-wider">MEBR</span>
-          </div>
-          <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
+          <a href="#top" className="flex items-center gap-3">
+            <img src={mebrLogo.url} alt="House of Panchion" width={36} height={36} className="w-9 h-9 rounded-md object-cover" />
+            <span className="font-display text-lg tracking-wider">House of Panchion</span>
+          </a>
+          <nav className="hidden md:flex gap-6 text-sm text-muted-foreground">
+            <a href="#mebr" className="hover:text-foreground transition">MEBR</a>
+            <a href="#bbrp" className="hover:text-foreground transition">BBRP</a>
             <a href="#countries" className="hover:text-foreground transition">Countries</a>
             <a href="#tutorial" className="hover:text-foreground transition">How to Join</a>
             <a href="#government" className="hover:text-foreground transition">Government</a>
@@ -73,8 +75,38 @@ function Index() {
         </div>
       </header>
 
+
+      {/* House of Panchion intro */}
+      <section id="top" className="relative pt-36 pb-16 px-5">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Studio</p>
+          <h1 className="font-display text-5xl md:text-7xl mb-6 italic">House of Panchion</h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            The studio behind immersive border-roleplay worlds. Home of <a href="#mebr" className="text-foreground underline decoration-ember underline-offset-4">MEBR</a> — our flagship — and the upcoming <a href="#bbrp" className="text-foreground underline decoration-ember underline-offset-4">BBRP</a>, releasing on the 12th.
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <a href="#mebr" className="px-6 py-3 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-xs shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+              Enter MEBR
+            </a>
+            <a href="#bbrp" className="px-6 py-3 rounded-md border border-border bg-background/40 text-foreground font-medium uppercase tracking-[0.2em] text-xs hover:bg-background/70 transition">
+              BBRP · Coming the 12th
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* MEBR Flagship Marker */}
+      <section id="mebr" className="px-5 pt-8">
+        <div className="max-w-6xl mx-auto flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+          <span className="h-px flex-1 bg-border" />
+          <span>Flagship Title · MEBR</span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+      </section>
+
       {/* Hero */}
-      <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
+      <section className="relative min-h-screen flex items-end pb-20 pt-20 overflow-hidden">
+
         <img
           src={mebrHero.url}
           alt="MEBR operator with Egyptian flag patch"
@@ -307,7 +339,46 @@ function Index() {
       </section>
 
 
+      {/* BBRP — In Production */}
+      <section id="bbrp" className="py-24 px-5">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-muted-foreground mb-10">
+            <span className="h-px flex-1 bg-border" />
+            <span>New from House of Panchion</span>
+            <span className="h-px flex-1 bg-border" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12 rounded-2xl border border-border bg-card/70">
+            <div>
+              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">In Production · Releasing the 12th</p>
+              <h2 className="font-display text-4xl md:text-6xl mb-5 italic">
+                Balkan Border<br/>
+                <span className="not-italic">Roleplay</span>
+              </h2>
+              <p className="text-muted-foreground text-lg mb-6">
+                BBRP is the next world from House of Panchion — a Balkan-themed border roleplay built with the same depth as MEBR. Currently in active production and launching on the <span className="text-foreground font-semibold">12th</span>.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="px-3 py-1.5 rounded-md border border-border text-xs uppercase tracking-widest text-muted-foreground">In Production</span>
+                <span className="px-3 py-1.5 rounded-md text-xs uppercase tracking-widest text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>Launch · The 12th</span>
+              </div>
+              <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block text-xs font-bold uppercase tracking-widest text-ember hover:underline">
+                Get notified in our Discord →
+              </a>
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {["rs","hr","ba","si","me","mk","al","bg","ro"].map((iso) => (
+                <div key={iso} className="aspect-[4/3] rounded-md overflow-hidden bg-muted flex items-center justify-center p-2 border border-border">
+                  <img src={`https://flagcdn.com/w320/${iso}.png`} alt={`${iso} flag`} loading="lazy" className="max-w-full max-h-full object-contain shadow-sm ring-1 ring-border" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Safety */}
+
       <section className="py-20 px-5 border-y border-border bg-card/40">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
           <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl shrink-0" style={{ background: "var(--gradient-ember)" }}>
