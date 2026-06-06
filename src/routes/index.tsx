@@ -76,8 +76,37 @@ function Index() {
       </header>
 
 
+      {/* House of Panchion intro */}
+      <section id="top" className="relative pt-36 pb-16 px-5">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Studio</p>
+          <h1 className="font-display text-5xl md:text-7xl mb-6 italic">House of Panchion</h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            The studio behind immersive border-roleplay worlds. Home of <a href="#mebr" className="text-foreground underline decoration-ember underline-offset-4">MEBR</a> — our flagship — and the upcoming <a href="#bbrp" className="text-foreground underline decoration-ember underline-offset-4">BBRP</a>, releasing on the 12th.
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <a href="#mebr" className="px-6 py-3 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-xs shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
+              Enter MEBR
+            </a>
+            <a href="#bbrp" className="px-6 py-3 rounded-md border border-border bg-background/40 text-foreground font-medium uppercase tracking-[0.2em] text-xs hover:bg-background/70 transition">
+              BBRP · Coming the 12th
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* MEBR Flagship Marker */}
+      <section id="mebr" className="px-5 pt-8">
+        <div className="max-w-6xl mx-auto flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+          <span className="h-px flex-1 bg-border" />
+          <span>Flagship Title · MEBR</span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+      </section>
+
       {/* Hero */}
-      <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
+      <section className="relative min-h-screen flex items-end pb-20 pt-20 overflow-hidden">
+
         <img
           src={mebrHero.url}
           alt="MEBR operator with Egyptian flag patch"
