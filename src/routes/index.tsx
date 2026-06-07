@@ -32,15 +32,15 @@ export const Route = createFileRoute("/")({
 type Country = { name: string; iso: string; tag: string; desc: string; imgUrl?: string };
 
 const countries: Country[] = [
-  { name: "Kuwait", iso: "kw", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security." },
-  { name: "Egypt", iso: "eg", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control." },
-  { name: "Lebanon", iso: "lb", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities." },
-  { name: "Iraq", iso: "iq", tag: "Twin Rivers", desc: "Desert frontiers and urban operations." },
-  { name: "Syria", iso: "sy", tag: "Northern Stand", desc: "Multi-front border defense and rebuild." },
-  { name: "Israel", iso: "il", tag: "Iron Watch", desc: "High-tech defense and rapid response." },
-  { name: "Jordan", iso: "jo", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors." },
-  { name: "Palestine", iso: "ps", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay." },
-  { name: "Kurdistan", iso: "krd", tag: "Mountain Guard", desc: "Highland frontiers, peshmerga patrols, and autonomous operations.", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/1280px-Flag_of_Kurdistan.svg.png" },
+  { name: "Kuwait 🇰🇼", iso: "kw", tag: "⚓ Gulf Sentinel", desc: "🛢️ Coastal patrols and oil-corridor security." },
+  { name: "Egypt 🇪🇬", iso: "eg", tag: "🏜️ Land of the Nile", desc: "🐪 Sinai checkpoints and Suez control." },
+  { name: "Lebanon 🇱🇧", iso: "lb", tag: "🌲 Cedar Coast", desc: "🏔️ Mountain outposts and coastal cities." },
+  { name: "Iraq 🇮🇶", iso: "iq", tag: "🌊 Twin Rivers", desc: "🏙️ Desert frontiers and urban operations." },
+  { name: "Syria 🇸🇾", iso: "sy", tag: "🛡️ Northern Stand", desc: "⚔️ Multi-front border defense and rebuild." },
+  { name: "Israel 🇮🇱", iso: "il", tag: "⚙️ Iron Watch", desc: "🚁 High-tech defense and rapid response." },
+  { name: "Jordan 🇯🇴", iso: "jo", tag: "👑 Desert Kingdom", desc: "🕊️ Border command and humanitarian corridors." },
+  { name: "Palestine 🇵🇸", iso: "ps", tag: "🗝️ Homeland Resolve", desc: "🤝 Community defense and resistance roleplay." },
+  { name: "Kurdistan ☀️", iso: "krd", tag: "⛰️ Mountain Guard", desc: "🪖 Highland frontiers, peshmerga patrols, and autonomous operations.", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/1280px-Flag_of_Kurdistan.svg.png" },
 ];
 
 function Index() {
