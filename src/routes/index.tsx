@@ -86,19 +86,19 @@ function Index() {
         <div className="absolute inset-0 bg-background/50" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
-          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Server · Established 2024</p>
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">🎮 Roleplay Server · Established 2024</p>
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl mb-6 max-w-5xl leading-tight">
-            Middle Eastern Border Roleplay
+            🏜️ Middle Eastern Border Roleplay 🪖
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-            Nine nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
+            🌍 Nine nations. ⚔️ One contested region. 🚩 Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
           </p>
           <div className="flex flex-wrap gap-3">
             <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-xs shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-              Join the Discord
+              💬 Join the Discord
             </a>
             <a href="#countries" className="px-7 py-3.5 rounded-md border border-border bg-background/40 backdrop-blur text-foreground font-medium uppercase tracking-[0.2em] text-xs hover:bg-background/70 transition">
-              View Nations
+              🌍 View Nations
             </a>
           </div>
         </div>
