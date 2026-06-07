@@ -285,19 +285,19 @@ function Index() {
       {/* Growth on Roblox */}
       <section className="py-20 px-5 border-y border-border bg-card/40">
         <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-xl border border-border bg-background">
-          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Growing on Roblox</p>
-          <h2 className="font-display text-2xl md:text-4xl mb-4">Activity is climbing. Get in early.</h2>
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">📈 Growing on Roblox</p>
+          <h2 className="font-display text-2xl md:text-4xl mb-4">🚀 Activity is climbing. ⏰ Get in early.</h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-8">
-            MEBR is steadily rising in activity on Roblox — more players, more events, more action every week. Now is the time to claim your nation, lock in a rank, and grow with the community.
+            🎮 MEBR is steadily rising in activity on Roblox — 👥 more players, 🎉 more events, ⚔️ more action every week. Now is the time to claim your nation, lock in a rank, and grow with the community.
           </p>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { n: "↑", l: "Weekly Growth" },
-              { n: "Live", l: "On Roblox" },
-              { n: "9", l: "Nations Active" },
+              { n: "📈", l: "Weekly Growth" },
+              { n: "🎮", l: "Live on Roblox" },
+              { n: "🌍", l: "9 Nations Active" },
             ].map(s => (
               <div key={s.l} className="p-5 rounded-lg bg-card border border-border">
-                <div className="font-display text-2xl md:text-3xl text-ember mb-1">{s.n}</div>
+                <div className="text-2xl md:text-3xl mb-1">{s.n}</div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground">{s.l}</div>
               </div>
             ))}
@@ -309,13 +309,13 @@ function Index() {
       <section className="py-20 px-5">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-8">
           <div className="w-16 h-16 rounded-md flex items-center justify-center text-2xl shrink-0 border border-border bg-card">
-            🛡
+            🛡️
           </div>
           <div>
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">Safe & Monitored 24/7</p>
-            <h2 className="font-display text-2xl md:text-3xl mb-3">A server you can actually trust</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">🛡️ Safe & Monitored 24/7</p>
+            <h2 className="font-display text-2xl md:text-3xl mb-3">✅ A server you can actually trust</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Our staff monitors the server around the clock. Anti-cheat, active moderation, and zero tolerance for harassment keep MEBR a safe place to roleplay — day or night.
+              👀 Our staff monitors the server around the clock. 🛡️ Anti-cheat, 👮 active moderation, and 🚫 zero tolerance for harassment keep MEBR a safe place to roleplay — 🌞 day or 🌙 night.
             </p>
           </div>
         </div>
@@ -325,10 +325,10 @@ function Index() {
       <section id="join" className="py-32 px-5 text-center relative overflow-hidden border-t border-border">
         <div className="absolute inset-0 opacity-25" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
         <div className="relative max-w-3xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl mb-6">The border won't hold itself</h2>
-          <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
+          <h2 className="font-display text-3xl md:text-5xl mb-6">⚔️ The border won't hold itself 🛡️</h2>
+          <p className="text-muted-foreground text-lg mb-10">🪖 Join Middle Eastern Border Roleplay today. 🚩 Your nation is waiting.</p>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-            discord.gg/mebr
+            💬 discord.gg/mebr
           </a>
         </div>
       </section>
