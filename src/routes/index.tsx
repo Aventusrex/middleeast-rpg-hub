@@ -184,17 +184,17 @@ function Index() {
       <section id="government" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Government & Elections</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">Run for office. Lead your nation.</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🏛️ Government & Elections</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">🗳️ Run for office. 👑 Lead your nation.</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
+              🏛️ Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { t: "Join the Government", d: "Apply for cabinet roles, ministries and senior government positions in any of the nine nations." },
-              { t: "Run for President", d: "Campaign, build your platform, and rally voters during official election cycles." },
-              { t: "Fair Elections", d: "Every vote is verified and supervised by staff. No rigging, no favoritism — the people decide." },
+              { t: "🏛️ Join the Government", d: "Apply for cabinet roles, ministries and senior government positions in any of the nine nations." },
+              { t: "👑 Run for President", d: "Campaign, build your platform, and rally voters during official election cycles." },
+              { t: "🗳️ Fair Elections", d: "Every vote is verified and supervised by staff. No rigging, no favoritism — the people decide." },
             ].map(x => (
               <div key={x.t} className="p-6 rounded-lg bg-card border border-border hover:border-ember/60 transition">
                 <h3 className="font-display text-xl mb-2">{x.t}</h3>
