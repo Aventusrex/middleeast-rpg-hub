@@ -62,14 +62,14 @@ function Index() {
             <span className="font-display text-lg tracking-wide">Middle Eastern Border Roleplay</span>
           </a>
           <nav className="hidden md:flex gap-6 text-sm text-muted-foreground">
-            <a href="#countries" className="hover:text-foreground transition">Nations</a>
-            <a href="#tutorial" className="hover:text-foreground transition">Enlistment</a>
-            <a href="#government" className="hover:text-foreground transition">Government</a>
-            <a href="#ranks" className="hover:text-foreground transition">Ranks</a>
-            <a href="#staff" className="hover:text-foreground transition">Staff</a>
+            <a href="#countries" className="hover:text-foreground transition">🌍 Nations</a>
+            <a href="#tutorial" className="hover:text-foreground transition">🪖 Enlistment</a>
+            <a href="#government" className="hover:text-foreground transition">🏛️ Government</a>
+            <a href="#ranks" className="hover:text-foreground transition">🎖️ Ranks</a>
+            <a href="#staff" className="hover:text-foreground transition">🛡️ Staff</a>
           </nav>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium uppercase tracking-widest px-4 py-2 rounded-md border border-border text-foreground hover:bg-card/60 transition">
-            Enlist
+            ⚔️ Enlist
           </a>
         </div>
       </header>
