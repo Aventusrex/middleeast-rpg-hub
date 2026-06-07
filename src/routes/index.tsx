@@ -153,17 +153,17 @@ function Index() {
       <section id="tutorial" className="py-24 px-5 bg-card/40 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Enlistment Process</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">From civilian to soldier in four steps</h2>
-            <p className="text-muted-foreground leading-relaxed">Follow this path and you will be on the frontline within minutes.</p>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🪖 Enlistment Process</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">👤 From civilian to soldier in four steps</h2>
+            <p className="text-muted-foreground leading-relaxed">⚡ Follow this path and you will be on the frontline within minutes.</p>
           </div>
 
           <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { n: "01", t: "Join the Discord", d: "Enter our Discord server — the hub for everything MEBR.", cta: { label: "Open Discord", href: DISCORD_URL } },
-              { n: "02", t: "Pick Your Country", d: "Choose one of the nine nations and join its dedicated channel." },
-              { n: "03", t: "Enlist in the Army", d: "Sign up to your country's military and complete the recruitment form." },
-              { n: "04", t: "Get Ranked by Staff", d: "A moderator will verify and rank you inside your nation's army." },
+              { n: "01", t: "💬 Join the Discord", d: "Enter our Discord server — the hub for everything MEBR.", cta: { label: "Open Discord", href: DISCORD_URL } },
+              { n: "02", t: "🚩 Pick Your Country", d: "Choose one of the nine nations and join its dedicated channel." },
+              { n: "03", t: "🪖 Enlist in the Army", d: "Sign up to your country's military and complete the recruitment form." },
+              { n: "04", t: "🎖️ Get Ranked by Staff", d: "A moderator will verify and rank you inside your nation's army." },
             ].map((s) => (
               <li key={s.n} className="relative p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition flex flex-col">
                 <div className="font-display text-3xl text-ember mb-4">{s.n}</div>
@@ -171,7 +171,7 @@ function Index() {
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.d}</p>
                 {s.cta && (
                   <a href={s.cta.href} target="_blank" rel="noopener noreferrer" className="mt-4 text-xs font-medium uppercase tracking-widest text-ember hover:underline">
-                    {s.cta.label} →
+                    🔗 {s.cta.label} →
                   </a>
                 )}
               </li>
