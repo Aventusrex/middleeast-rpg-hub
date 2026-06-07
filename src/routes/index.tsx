@@ -111,8 +111,8 @@ function Index() {
             <img src={mebrSquad.url} alt="MEBR squad on patrol" width={1600} height={900} className="w-full h-auto object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">In-Game Operations</p>
-              <h3 className="font-display text-2xl md:text-4xl">Boots on the ground. Every single day.</h3>
+              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">🎯 In-Game Operations</p>
+              <h3 className="font-display text-2xl md:text-4xl">🪖 Boots on the ground. Every single day.</h3>
             </div>
           </div>
         </div>
