@@ -246,10 +246,10 @@ function Index() {
       <section id="staff" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">The Backbone</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">Meet the high command</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🛡️ The Backbone</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">👮 Meet the high command</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend.
+              ✅ Trained, active, and fair. 🎟️ Tickets answered in minutes, 🚫 rule breakers handled fast, and 🎉 events run every weekend.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ function Index() {
                 <div className="w-14 h-14 rounded-full mb-5 flex items-center justify-center font-display text-xl text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
                   {s.initials}
                 </div>
-                <h3 className="font-display text-xl mb-1">{s.name}</h3>
+                <h3 className="font-display text-xl mb-1">⭐ {s.name}</h3>
                 <p className="text-[10px] uppercase tracking-widest text-ember mb-3">{s.role}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
@@ -268,10 +268,10 @@ function Index() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { n: "24/7", l: "Coverage" },
-              { n: "<5m", l: "Avg Response" },
-              { n: "100%", l: "Active Daily" },
-              { n: "0", l: "Tolerance for Abuse" },
+              { n: "24/7", l: "🕒 Coverage" },
+              { n: "<5m", l: "⚡ Avg Response" },
+              { n: "100%", l: "🔥 Active Daily" },
+              { n: "0", l: "🚫 Tolerance for Abuse" },
             ].map(s => (
               <div key={s.l} className="p-6 rounded-lg bg-card border border-border">
                 <div className="font-display text-3xl md:text-4xl text-ember mb-1">{s.n}</div>
