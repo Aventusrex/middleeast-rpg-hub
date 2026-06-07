@@ -209,20 +209,20 @@ function Index() {
       <section id="ranks" className="py-24 px-5 bg-card/40 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Ranks & Progression</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">From recruit to commander-in-chief</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🎖️ Ranks & Progression</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">⬆️ From recruit to commander-in-chief</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Every soldier starts at the bottom. Prove yourself on patrols, events and operations to climb your nation's military ladder — and unlock the right to run for President.
+              🪖 Every soldier starts at the bottom. Prove yourself on patrols, events and operations to climb your nation's military ladder — and unlock the right to run for President. 👑
             </p>
           </div>
 
           <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
             {[
-              { n: "01", t: "Recruit", d: "Pass enlistment and complete your first training." },
-              { n: "02", t: "Soldier", d: "Active on patrols, events and squad operations." },
-              { n: "03", t: "NCO", d: "Lead squads, run drills, and mentor new recruits." },
-              { n: "04", t: "Officer", d: "Command platoons and plan nation-wide operations." },
-              { n: "05", t: "High Command", d: "General staff — eligible to run for President." },
+              { n: "01", t: "🆕 Recruit", d: "Pass enlistment and complete your first training." },
+              { n: "02", t: "🪖 Soldier", d: "Active on patrols, events and squad operations." },
+              { n: "03", t: "🎗️ NCO", d: "Lead squads, run drills, and mentor new recruits." },
+              { n: "04", t: "🎖️ Officer", d: "Command platoons and plan nation-wide operations." },
+              { n: "05", t: "⭐ High Command", d: "General staff — eligible to run for President." },
             ].map((r) => (
               <li key={r.n} className="p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition">
                 <div className="font-display text-3xl text-ember mb-3">{r.n}</div>
@@ -233,10 +233,10 @@ function Index() {
           </ol>
 
           <div className="p-6 md:p-8 rounded-lg border border-ember/40 bg-background">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-ember mb-2">Presidential Eligibility</p>
-            <h3 className="font-display text-2xl mb-2">Earn your rank, then earn your country's vote</h3>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-ember mb-2">👑 Presidential Eligibility</p>
+            <h3 className="font-display text-2xl mb-2">🎖️ Earn your rank, then earn your country's vote 🗳️</h3>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
-              Reach High Command in your nation's army and you unlock the right to campaign in the official Presidential elections.
+              ⭐ Reach High Command in your nation's army and you unlock the right to campaign in the official Presidential elections.
             </p>
           </div>
         </div>
