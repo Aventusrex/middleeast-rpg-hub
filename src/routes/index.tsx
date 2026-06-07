@@ -32,15 +32,15 @@ export const Route = createFileRoute("/")({
 type Country = { name: string; iso: string; tag: string; desc: string; imgUrl?: string };
 
 const countries: Country[] = [
-  { name: "Kuwait", iso: "kw", tag: "Gulf Sentinel", desc: "Coastal patrols and oil-corridor security." },
-  { name: "Egypt", iso: "eg", tag: "Land of the Nile", desc: "Sinai checkpoints and Suez control." },
-  { name: "Lebanon", iso: "lb", tag: "Cedar Coast", desc: "Mountain outposts and coastal cities." },
-  { name: "Iraq", iso: "iq", tag: "Twin Rivers", desc: "Desert frontiers and urban operations." },
-  { name: "Syria", iso: "sy", tag: "Northern Stand", desc: "Multi-front border defense and rebuild." },
-  { name: "Israel", iso: "il", tag: "Iron Watch", desc: "High-tech defense and rapid response." },
-  { name: "Jordan", iso: "jo", tag: "Desert Kingdom", desc: "Border command and humanitarian corridors." },
-  { name: "Palestine", iso: "ps", tag: "Homeland Resolve", desc: "Community defense and resistance roleplay." },
-  { name: "Kurdistan", iso: "krd", tag: "Mountain Guard", desc: "Highland frontiers, peshmerga patrols, and autonomous operations.", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/1280px-Flag_of_Kurdistan.svg.png" },
+  { name: "Kuwait 🇰🇼", iso: "kw", tag: "⚓ Gulf Sentinel", desc: "🛢️ Coastal patrols and oil-corridor security." },
+  { name: "Egypt 🇪🇬", iso: "eg", tag: "🏜️ Land of the Nile", desc: "🐪 Sinai checkpoints and Suez control." },
+  { name: "Lebanon 🇱🇧", iso: "lb", tag: "🌲 Cedar Coast", desc: "🏔️ Mountain outposts and coastal cities." },
+  { name: "Iraq 🇮🇶", iso: "iq", tag: "🌊 Twin Rivers", desc: "🏙️ Desert frontiers and urban operations." },
+  { name: "Syria 🇸🇾", iso: "sy", tag: "🛡️ Northern Stand", desc: "⚔️ Multi-front border defense and rebuild." },
+  { name: "Israel 🇮🇱", iso: "il", tag: "⚙️ Iron Watch", desc: "🚁 High-tech defense and rapid response." },
+  { name: "Jordan 🇯🇴", iso: "jo", tag: "👑 Desert Kingdom", desc: "🕊️ Border command and humanitarian corridors." },
+  { name: "Palestine 🇵🇸", iso: "ps", tag: "🗝️ Homeland Resolve", desc: "🤝 Community defense and resistance roleplay." },
+  { name: "Kurdistan ☀️", iso: "krd", tag: "⛰️ Mountain Guard", desc: "🪖 Highland frontiers, peshmerga patrols, and autonomous operations.", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/1280px-Flag_of_Kurdistan.svg.png" },
 ];
 
 function Index() {
@@ -62,14 +62,14 @@ function Index() {
             <span className="font-display text-lg tracking-wide">Middle Eastern Border Roleplay</span>
           </a>
           <nav className="hidden md:flex gap-6 text-sm text-muted-foreground">
-            <a href="#countries" className="hover:text-foreground transition">Nations</a>
-            <a href="#tutorial" className="hover:text-foreground transition">Enlistment</a>
-            <a href="#government" className="hover:text-foreground transition">Government</a>
-            <a href="#ranks" className="hover:text-foreground transition">Ranks</a>
-            <a href="#staff" className="hover:text-foreground transition">Staff</a>
+            <a href="#countries" className="hover:text-foreground transition">🌍 Nations</a>
+            <a href="#tutorial" className="hover:text-foreground transition">🪖 Enlistment</a>
+            <a href="#government" className="hover:text-foreground transition">🏛️ Government</a>
+            <a href="#ranks" className="hover:text-foreground transition">🎖️ Ranks</a>
+            <a href="#staff" className="hover:text-foreground transition">🛡️ Staff</a>
           </nav>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium uppercase tracking-widest px-4 py-2 rounded-md border border-border text-foreground hover:bg-card/60 transition">
-            Enlist
+            ⚔️ Enlist
           </a>
         </div>
       </header>
@@ -86,19 +86,19 @@ function Index() {
         <div className="absolute inset-0 bg-background/50" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative max-w-6xl mx-auto px-5 w-full">
-          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">Roleplay Server · Established 2024</p>
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-4">🎮 Roleplay Server · Established 2024</p>
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl mb-6 max-w-5xl leading-tight">
-            Middle Eastern Border Roleplay
+            🏜️ Middle Eastern Border Roleplay 🪖
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-            Nine nations. One contested region. Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
+            🌍 Nine nations. ⚔️ One contested region. 🚩 Pick your flag, hold your post, and write your story alongside hundreds of dedicated players.
           </p>
           <div className="flex flex-wrap gap-3">
             <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-xs shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-              Join the Discord
+              💬 Join the Discord
             </a>
             <a href="#countries" className="px-7 py-3.5 rounded-md border border-border bg-background/40 backdrop-blur text-foreground font-medium uppercase tracking-[0.2em] text-xs hover:bg-background/70 transition">
-              View Nations
+              🌍 View Nations
             </a>
           </div>
         </div>
@@ -111,8 +111,8 @@ function Index() {
             <img src={mebrSquad.url} alt="MEBR squad on patrol" width={1600} height={900} className="w-full h-auto object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">In-Game Operations</p>
-              <h3 className="font-display text-2xl md:text-4xl">Boots on the ground. Every single day.</h3>
+              <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">🎯 In-Game Operations</p>
+              <h3 className="font-display text-2xl md:text-4xl">🪖 Boots on the ground. Every single day.</h3>
             </div>
           </div>
         </div>
@@ -122,9 +122,9 @@ function Index() {
       <section id="countries" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Choose Your Allegiance</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">Nine nations open for enlistment</h2>
-            <p className="text-muted-foreground leading-relaxed">Each nation runs its own command structure, ranks, missions and storylines. Switch allegiances or rise through the ranks of one.</p>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🚩 Choose Your Allegiance</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">🌍 Nine nations open for enlistment</h2>
+            <p className="text-muted-foreground leading-relaxed">⚔️ Each nation runs its own command structure, ranks, missions and storylines. 🔁 Switch allegiances or rise through the ranks of one.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {countries.map((c) => (
@@ -153,17 +153,17 @@ function Index() {
       <section id="tutorial" className="py-24 px-5 bg-card/40 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Enlistment Process</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">From civilian to soldier in four steps</h2>
-            <p className="text-muted-foreground leading-relaxed">Follow this path and you will be on the frontline within minutes.</p>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🪖 Enlistment Process</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">👤 From civilian to soldier in four steps</h2>
+            <p className="text-muted-foreground leading-relaxed">⚡ Follow this path and you will be on the frontline within minutes.</p>
           </div>
 
           <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { n: "01", t: "Join the Discord", d: "Enter our Discord server — the hub for everything MEBR.", cta: { label: "Open Discord", href: DISCORD_URL } },
-              { n: "02", t: "Pick Your Country", d: "Choose one of the nine nations and join its dedicated channel." },
-              { n: "03", t: "Enlist in the Army", d: "Sign up to your country's military and complete the recruitment form." },
-              { n: "04", t: "Get Ranked by Staff", d: "A moderator will verify and rank you inside your nation's army." },
+              { n: "01", t: "💬 Join the Discord", d: "Enter our Discord server — the hub for everything MEBR.", cta: { label: "Open Discord", href: DISCORD_URL } },
+              { n: "02", t: "🚩 Pick Your Country", d: "Choose one of the nine nations and join its dedicated channel." },
+              { n: "03", t: "🪖 Enlist in the Army", d: "Sign up to your country's military and complete the recruitment form." },
+              { n: "04", t: "🎖️ Get Ranked by Staff", d: "A moderator will verify and rank you inside your nation's army." },
             ].map((s) => (
               <li key={s.n} className="relative p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition flex flex-col">
                 <div className="font-display text-3xl text-ember mb-4">{s.n}</div>
@@ -171,7 +171,7 @@ function Index() {
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.d}</p>
                 {s.cta && (
                   <a href={s.cta.href} target="_blank" rel="noopener noreferrer" className="mt-4 text-xs font-medium uppercase tracking-widest text-ember hover:underline">
-                    {s.cta.label} →
+                    🔗 {s.cta.label} →
                   </a>
                 )}
               </li>
@@ -184,17 +184,17 @@ function Index() {
       <section id="government" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Government & Elections</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">Run for office. Lead your nation.</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🏛️ Government & Elections</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">🗳️ Run for office. 👑 Lead your nation.</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
+              🏛️ Every country has its own government. Become a minister, climb the cabinet, or campaign for President — winners are decided by fair, monitored elections held for each nation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { t: "Join the Government", d: "Apply for cabinet roles, ministries and senior government positions in any of the nine nations." },
-              { t: "Run for President", d: "Campaign, build your platform, and rally voters during official election cycles." },
-              { t: "Fair Elections", d: "Every vote is verified and supervised by staff. No rigging, no favoritism — the people decide." },
+              { t: "🏛️ Join the Government", d: "Apply for cabinet roles, ministries and senior government positions in any of the nine nations." },
+              { t: "👑 Run for President", d: "Campaign, build your platform, and rally voters during official election cycles." },
+              { t: "🗳️ Fair Elections", d: "Every vote is verified and supervised by staff. No rigging, no favoritism — the people decide." },
             ].map(x => (
               <div key={x.t} className="p-6 rounded-lg bg-card border border-border hover:border-ember/60 transition">
                 <h3 className="font-display text-xl mb-2">{x.t}</h3>
@@ -209,20 +209,20 @@ function Index() {
       <section id="ranks" className="py-24 px-5 bg-card/40 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Ranks & Progression</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">From recruit to commander-in-chief</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🎖️ Ranks & Progression</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">⬆️ From recruit to commander-in-chief</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Every soldier starts at the bottom. Prove yourself on patrols, events and operations to climb your nation's military ladder — and unlock the right to run for President.
+              🪖 Every soldier starts at the bottom. Prove yourself on patrols, events and operations to climb your nation's military ladder — and unlock the right to run for President. 👑
             </p>
           </div>
 
           <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
             {[
-              { n: "01", t: "Recruit", d: "Pass enlistment and complete your first training." },
-              { n: "02", t: "Soldier", d: "Active on patrols, events and squad operations." },
-              { n: "03", t: "NCO", d: "Lead squads, run drills, and mentor new recruits." },
-              { n: "04", t: "Officer", d: "Command platoons and plan nation-wide operations." },
-              { n: "05", t: "High Command", d: "General staff — eligible to run for President." },
+              { n: "01", t: "🆕 Recruit", d: "Pass enlistment and complete your first training." },
+              { n: "02", t: "🪖 Soldier", d: "Active on patrols, events and squad operations." },
+              { n: "03", t: "🎗️ NCO", d: "Lead squads, run drills, and mentor new recruits." },
+              { n: "04", t: "🎖️ Officer", d: "Command platoons and plan nation-wide operations." },
+              { n: "05", t: "⭐ High Command", d: "General staff — eligible to run for President." },
             ].map((r) => (
               <li key={r.n} className="p-6 rounded-lg bg-background border border-border hover:border-ember/60 transition">
                 <div className="font-display text-3xl text-ember mb-3">{r.n}</div>
@@ -233,10 +233,10 @@ function Index() {
           </ol>
 
           <div className="p-6 md:p-8 rounded-lg border border-ember/40 bg-background">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-ember mb-2">Presidential Eligibility</p>
-            <h3 className="font-display text-2xl mb-2">Earn your rank, then earn your country's vote</h3>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-ember mb-2">👑 Presidential Eligibility</p>
+            <h3 className="font-display text-2xl mb-2">🎖️ Earn your rank, then earn your country's vote 🗳️</h3>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
-              Reach High Command in your nation's army and you unlock the right to campaign in the official Presidential elections.
+              ⭐ Reach High Command in your nation's army and you unlock the right to campaign in the official Presidential elections.
             </p>
           </div>
         </div>
@@ -246,10 +246,10 @@ function Index() {
       <section id="staff" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 max-w-2xl">
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">The Backbone</p>
-            <h2 className="font-display text-3xl md:text-4xl mb-4">Meet the high command</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">🛡️ The Backbone</p>
+            <h2 className="font-display text-3xl md:text-4xl mb-4">👮 Meet the high command</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Trained, active, and fair. Tickets answered in minutes, rule breakers handled fast, and events run every weekend.
+              ✅ Trained, active, and fair. 🎟️ Tickets answered in minutes, 🚫 rule breakers handled fast, and 🎉 events run every weekend.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ function Index() {
                 <div className="w-14 h-14 rounded-full mb-5 flex items-center justify-center font-display text-xl text-primary-foreground" style={{ background: "var(--gradient-ember)" }}>
                   {s.initials}
                 </div>
-                <h3 className="font-display text-xl mb-1">{s.name}</h3>
+                <h3 className="font-display text-xl mb-1">⭐ {s.name}</h3>
                 <p className="text-[10px] uppercase tracking-widest text-ember mb-3">{s.role}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
@@ -268,10 +268,10 @@ function Index() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { n: "24/7", l: "Coverage" },
-              { n: "<5m", l: "Avg Response" },
-              { n: "100%", l: "Active Daily" },
-              { n: "0", l: "Tolerance for Abuse" },
+              { n: "24/7", l: "🕒 Coverage" },
+              { n: "<5m", l: "⚡ Avg Response" },
+              { n: "100%", l: "🔥 Active Daily" },
+              { n: "0", l: "🚫 Tolerance for Abuse" },
             ].map(s => (
               <div key={s.l} className="p-6 rounded-lg bg-card border border-border">
                 <div className="font-display text-3xl md:text-4xl text-ember mb-1">{s.n}</div>
@@ -285,19 +285,19 @@ function Index() {
       {/* Growth on Roblox */}
       <section className="py-20 px-5 border-y border-border bg-card/40">
         <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-xl border border-border bg-background">
-          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">Growing on Roblox</p>
-          <h2 className="font-display text-2xl md:text-4xl mb-4">Activity is climbing. Get in early.</h2>
+          <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-3">📈 Growing on Roblox</p>
+          <h2 className="font-display text-2xl md:text-4xl mb-4">🚀 Activity is climbing. ⏰ Get in early.</h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-8">
-            MEBR is steadily rising in activity on Roblox — more players, more events, more action every week. Now is the time to claim your nation, lock in a rank, and grow with the community.
+            🎮 MEBR is steadily rising in activity on Roblox — 👥 more players, 🎉 more events, ⚔️ more action every week. Now is the time to claim your nation, lock in a rank, and grow with the community.
           </p>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { n: "↑", l: "Weekly Growth" },
-              { n: "Live", l: "On Roblox" },
-              { n: "9", l: "Nations Active" },
+              { n: "📈", l: "Weekly Growth" },
+              { n: "🎮", l: "Live on Roblox" },
+              { n: "🌍", l: "9 Nations Active" },
             ].map(s => (
               <div key={s.l} className="p-5 rounded-lg bg-card border border-border">
-                <div className="font-display text-2xl md:text-3xl text-ember mb-1">{s.n}</div>
+                <div className="text-2xl md:text-3xl mb-1">{s.n}</div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground">{s.l}</div>
               </div>
             ))}
@@ -309,13 +309,13 @@ function Index() {
       <section className="py-20 px-5">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-8">
           <div className="w-16 h-16 rounded-md flex items-center justify-center text-2xl shrink-0 border border-border bg-card">
-            🛡
+            🛡️
           </div>
           <div>
-            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">Safe & Monitored 24/7</p>
-            <h2 className="font-display text-2xl md:text-3xl mb-3">A server you can actually trust</h2>
+            <p className="text-ember font-medium uppercase tracking-[0.25em] text-[11px] mb-2">🛡️ Safe & Monitored 24/7</p>
+            <h2 className="font-display text-2xl md:text-3xl mb-3">✅ A server you can actually trust</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Our staff monitors the server around the clock. Anti-cheat, active moderation, and zero tolerance for harassment keep MEBR a safe place to roleplay — day or night.
+              👀 Our staff monitors the server around the clock. 🛡️ Anti-cheat, 👮 active moderation, and 🚫 zero tolerance for harassment keep MEBR a safe place to roleplay — 🌞 day or 🌙 night.
             </p>
           </div>
         </div>
@@ -325,10 +325,10 @@ function Index() {
       <section id="join" className="py-32 px-5 text-center relative overflow-hidden border-t border-border">
         <div className="absolute inset-0 opacity-25" style={{ background: "radial-gradient(ellipse at center, var(--ember) 0%, transparent 60%)" }} />
         <div className="relative max-w-3xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl mb-6">The border won't hold itself</h2>
-          <p className="text-muted-foreground text-lg mb-10">Join Middle Eastern Border Roleplay today. Your nation is waiting.</p>
+          <h2 className="font-display text-3xl md:text-5xl mb-6">⚔️ The border won't hold itself 🛡️</h2>
+          <p className="text-muted-foreground text-lg mb-10">🪖 Join Middle Eastern Border Roleplay today. 🚩 Your nation is waiting.</p>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 rounded-md text-primary-foreground font-medium uppercase tracking-[0.2em] text-sm shadow-[var(--shadow-ember)]" style={{ background: "var(--gradient-ember)" }}>
-            discord.gg/mebr
+            💬 discord.gg/mebr
           </a>
         </div>
       </section>
